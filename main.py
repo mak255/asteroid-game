@@ -51,7 +51,7 @@ def main():
             for shot in shots:
                 if shot.collides_with(astrd):
                     log_event("asteroid_shot")
-                    astrd.kill()
+                    astrd.split()
                     shot.kill()
         pygame.display.flip()
         ms = clock.tick(60)
